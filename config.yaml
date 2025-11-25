@@ -1,0 +1,11 @@
+# 部署配置文件
+# config_dest 指定将 ./config 下的文件复制到的目标目录
+config_dest: /opt/MonarchEdge/config
+# log_dest 指定容器日志在宿主机上的保存目录
+log_dest: /extp/logs
+
+# 设置为 true 表示加载镜像并启动服务，false 则跳过
+update_alarmsrv: false
+update_apigateway: false
+update_hissrv: true
+update_netsrv: false
